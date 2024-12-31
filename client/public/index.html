@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Robistaan</title>
+
+        <!--tailwind-->
+        <link rel="stylesheet" href="../src/style/style.css" />
+    </head>
+
+    <body
+        class="bg-[#C7B7A3] !scroll-smooth scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-300"
+    >
+        <header class="lg:snap-start">
+            <!-- Navbar Start flex-wrap mx-auto-->
+            <nav id="navbar" class="border-gray-300 fixed w-full top-0 z-50">
+                <div
+                    class="max-w-screen-xl flex items-center justify-between p-4"
+                >
+                    <!--space-x-3 rtl:space-x-reverse-->
+                    <a href="#" class="flex items-center">
+                        <!--logo-->
+                        <img
+                            src="./img/logo/COH (3).png"
+                            class="h-6 md:h-10 lg:h-14"
+                            alt="Logo of colours of happiness"
+                        />
+                        <!--Brandname-->
+                        <!--self-center whitespace-nowrap-->
+                        <span
+                            class="text-center flex-grow text-2xl font-semibold font-lavishly"
+                        ></span>
+                    </a>
+                    <!-- -->
+                    <!-- Nav Button -->
+                    <button
+                        id="nav-button"
+                        type="button"
+                        class="fixed top-4 right-6 z-50 inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-red-900 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    >
+                        <span class="sr-only">Open main menu</span>
+                        <svg
+                            class="w-5 h-5"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 17 14"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15"
+                            />
+                        </svg>
+                    </button>
+
+                    <!-- List Menu -->
+
+                    <div
+                        id="navbar-hamburger"
+                        class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 hidden"
+                    >
+                        <ul
+                            class="flex h-auto text-3xl font-normal font-playfair text-center flex-col lg:text-4xl md:text-4xl"
+                        >
+                            <li
+                                class="flex flex-col mt-5 py-3 sm:items-center text-white custom-nav-li animate-animate"
+                            >
+                                <a
+                                    href="#"
+                                    class="block py-0 hover:text-red-900"
+                                    >Home</a
+                                >
+                            </li>
+                            <li
+                                class="flex flex-col mt-5 py-3 items-center text-white custom-nav-li animate-animate delay-150"
+                            >
+                                <a href="#" class="block hover:text-red-900"
+                                    >About</a
+                                >
+                            </li>
+                            <li
+                                class="flex flex-col mt-5 py-3 items-center text-white custom-nav-li animate-animate delay-300"
+                            >
+                                <a href="#" class="block hover:text-red-900"
+                                    >Projects</a
+                                >
+                            </li>
+                            <li
+                                class="flex flex-col mt-5 py-3 items-center text-white custom-nav-li animate-animate delay-450"
+                            >
+                                <a href="#" class="block hover:text-red-900"
+                                    >Services</a
+                                >
+                            </li>
+                            <li
+                                class="flex flex-col mt-5 py-3 items-center text-white custom-nav-li animate-animate delay-600"
+                            >
+                                <a href="#" class="block hover:text-red-900"
+                                    >Contact us</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--navbar end-->
+        </header>
+
+        <main
+            class="font-playfair lg:h-screen lg:overflow-y-scroll lg:snap-y lg:snap-mandatory"
+        >
+            <!--Carousel section1 start-->
+            <section class="h-screen lg:snap-start">
+                <div class="carousel w-full overflow-hidden">
+                    <div
+                        class="carousel-container flex transition-transform duration-500 ease-in-out"
+                    >
+                        <div
+                            id="slide1"
+                            class="carousel-item w-full min-w-full"
+                        >
+                            <!--carousel image1-->
+                            <img
+                                src="./img/4.webp"
+                                class="w-full object-cover object-center overflow-hidden h-screen"
+                                alt="slide-1"
+                            />
+                        </div>
+                        <div
+                            id="slide2"
+                            class="carousel-item w-full min-w-full"
+                        >
+                            <!--carousel image2-->
+                            <img
+                                src="./img/celebration2.jpg"
+                                class="w-full object-cover object-center overflow-hidden h-screen"
+                                alt="slide-2"
+                            />
+                        </div>
+                        <div
+                            id="slide3"
+                            class="carousel-item w-full min-w-full bg-red-700"
+                        >
+                            <!--carousel image3-->
+                            <img
+                                data-src="./img/pragnancy2.jpg"
+                                class="lazyload w-full object-cover object-center overflow-hidden h-screen"
+                                alt="slide-3"
+                            />
+                        </div>
+                        <div
+                            id="slide4"
+                            class="carousel-item w-full min-w-full"
+                        >
+                            <!--carousel image4-->
+                            <img
+                                data-src="./img/newborn.jpg"
+                                class="lazyload w-full object-cover object-center overflow-hidden h-screen"
+                                alt="slide-4"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Carousel section1 end-->
+
+            <!--Quates section2-start-->
+            <section
+                class="bg-[#E8D8C4] h-auto lg:h-screen lg:snap-start flex flex-col justify-between"
+            >
+                <!--horizontal pics layout- upper part-->
+
+                <div class="grid grid-cols-4 gap-4 p-1">
+                    <!--Quates img-top-1-->
+                    <div
+                        class="rounded-lg  transition duration-500 ease-in-out filter grayscale hover:filter-none"
+                    >
+                        <img
+                            class="object-cover object-center rounded-lg lazyload"
+                            data-src="./img/title-img/title-img1.jpg"
+                            alt="Quates-wedding-img-top-1"
+                        />
+                    </div>
+                    <!--Quates img-top-2-->
+                    <div
+                        class=" rounded-lg transition duration-500 ease-in-out filter grayscale hover:filter-none"
+                    >
+                        <img
+                            class="object-cover object-center rounded-lg lazyload"
+                            data-src="./img/title-img/title-img2.jpg"
+                            alt="Quates-wedding-img-top-2"
+                        />
+                    </div>
+                    <!--Quates img-top-3-->
+                    <div
+                        class=" rounded-lg transition duration-500 ease-in-out filter grayscale hover:filter-none"
+                    >
+                        <img
+                            class="object-cover object-center rounded-lg lazyload"
+                            data-src="./img/title-img/title-img3.jpg"
+                            alt="Quates-wedding-img-top-3"
+                        />
+                    </div>
+                    <!--Quates img-top-4-->
+                    <div
+                        class=" rounded-lg transition duration-500 ease-in-out filter grayscale hover:filter-none"
+                    >
+                        <img
+                            class="object-cover object-center rounded-lg lazyload"
+                            data-src="./img/title-img/title-img4.jpg"
+                            alt="Quates-wedding-img-top-4"
+                    /></div>
+                </div>
+
+                <blockquote
+                    class="sm:text-2xl md:text-3xl py-4 m-0 italic font-light text-center text-[#561C24]"
+                >
+                    <p class="split-1 leading-normal"
+                        >Colors are the sparks <br />
+                        that <br />
+                        ignite creativity</p
+                    >
+                </blockquote>
+                <!--horizontal pics layout- bottom part-->
+                <div class="grid grid-cols-4 gap-4 p-1">
+                    <!--Quates img-bottom-1-->
+                    <div
+                        class=" rounded-lg transition duration-500 ease-in-out filter grayscale hover:filter-none"
+                    >
+                        <img
+                            class="object-cover object-center rounded-lg lazyload"
+                            data-src="./img/title-img/title-img5.jpg"
+                            alt="Quates-wedding-img-bottom-1"
+                        />
+                    </div>
+                    <!--Quates img-bottom-2-->
+                    <div
+                        class=" rounded-lg transition duration-500 ease-in-out filter grayscale hover:filter-none"
+                    >
+                        <img
+                            class="object-cover object-center rounded-lg lazyload"
+                            data-src="./img/title-img/title-img6.jpg"
+                            alt="Quates-wedding-img-bottom-2"
+                        />
+                    </div>
+                    <!--Quates img-bottom-3-->
+                    <div
+                        class=" rounded-lg transition duration-500 ease-in-out filter grayscale hover:filter-none"
+                    >
+                        <img
+                            class="object-cover object-center rounded-lg lazyload"
+                            data-src="./img/title-img/title-img7.jpeg"
+                            alt="Quates-wedding-img-bottom-3"
+                        />
+                    </div>
+                    <!--Quates img-bottom-4-->
+                    <div
+                        class=" rounded-lg transition duration-500 ease-in-out filter grayscale hover:filter-none"
+                    >
+                        <img
+                            class="object-cover object-center rounded-lg lazyload"
+                            data-src="./img/title-img/title-img8.jpg"
+                            alt="Quates-wedding-img-bottom-4"
+                        />
+                    </div>
+                </div>
+            </section>
+            <!--Quates section2-end-->
+
+            <!--title1 start-->
+            <section
+                class="flex flex-col justify-center text-left p-10 h-72 md:h-screen lg:snap-start bg-[#561C24]"
+            >
+                <h2
+                    class="text-4xl md:text-7xl lg:text-8xl font-semibold text-[#E8D8C4] leading-tight lg:leading-normal"
+                    >We <br />
+                    capture <br />
+                    your happiness</h2
+                >
+            </section>
+            <!--title1 end-->
+
+            <!--image1 section3-start -->
+            <section
+                class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-[#E8D8C4] sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3"
+            >
+                <div class="flex flex-col justify-center text-left p-10">
+                    <h2
+                        class="split-2 text-[#561C24] text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16"
+                        >The beauty of your wedding moments</h2
+                    >
+                </div>
+                <div class="flex justify-center items-center">
+                    <!--link to the wedding page-->
+                    <a href="./pages/wedding/wedding-photography.html">
+                        <!-- <a href="./wedding-photography.html">  -->
+                        <!--wedding couple img-->
+                        <img
+                            class="lazyload rounded-lg w-full h-full lg:w-full lg:h-auto overflow-hidden object-cover object-center transition transform hover:-translate-y-3 cursor-pointer"
+                            data-src="./img/wedding moment.webp"
+                            alt="wedding moment"
+                        />
+                    </a>
+                </div>
+            </section>
+            <!--image1 section3-end-->
+
+            <!--image2 section4-start-->
+            <section
+                class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-[#E8D8C4] sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3"
+            >
+                <div
+                    class="order-2 lg:order-1 flex justify-center items-center"
+                >
+                    <img
+                        class="lazyload rounded-lg w-full h-full lg:w-full lg:h-auto overflow-hidden object-cover object-center transition transform hover:-translate-y-3 cursor-pointer"
+                        data-src="./img/pragnant lady.webp"
+                        alt="image of pregnant lady"
+                    />
+                </div>
+                <div
+                    class="order-1 lg:order-2 flex flex-col justify-center text-left p-10"
+                >
+                    <h2
+                        class="split-3 text-[#561C24] text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16"
+                        >The glow of your pragnancy</h2
+                    >
+                </div>
+            </section>
+
+            <!--image2 section4-end-->
+
+            <!--title2 section start-->
+            <section
+                class="flex flex-col justify-center text-left p-10 h-72 md:h-screen lg:h-screen lg:snap-start bg-[#561C24] mt-1"
+            >
+                <h2
+                    class="text-4xl md:text-7xl lg:text-8xl font-semibold text-[#E8D8C4] leading-tight lg:leading-normal"
+                    >We <br />
+                    share <br />
+                    your smile</h2
+                >
+            </section>
+            <!--title2 section end-->
+
+            <!--image3 section5-start-->
+            <section
+                class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-[#E8D8C4] sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3"
+            >
+                <div class="flex flex-col justify-center text-left p-10">
+                    <h2
+                        class="split-4 text-[#561C24] text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16"
+                        >The first moment with your baby</h2
+                    >
+                </div>
+                <div class="flex justify-center items-center">
+                    <img
+                        class="lazyload rounded-lg w-full h-full lg:w-full lg:h-auto overflow-hidden object-cover object-center transition transform hover:-translate-y-3 cursor-pointer"
+                        data-src="./img/first-bay.jpg"
+                        alt="first moment with baby"
+                    />
+                </div>
+            </section>
+            <!--image3 section5-end-->
+
+            <!--image4 section6-start-->
+            <section
+                class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-[#E8D8C4] sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3"
+            >
+                <div
+                    class="order-2 lg:order-1 flex justify-center items-center"
+                >
+                    <img
+                        class="lazyload rounded-lg w-full h-full lg:w-full lg:h-auto overflow-hidden object-cover object-center transition transform hover:-translate-y-3 cursor-pointer"
+                        data-src="./img/birthday-moment.jpg"
+                        alt="birthday celebration"
+                    />
+                </div>
+                <div
+                    class="order-1 lg:order-2 flex flex-col justify-center text-left p-10"
+                >
+                    <h2
+                        class="split-5 text-[#561C24] text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16"
+                        >The joy of birthday</h2
+                    >
+                </div>
+            </section>
+
+            <!--title3 section6-end-->
+            <section
+                class="flex flex-col justify-center text-left p-10 h-72 md:h-screen lg:h-screen lg:snap-start bg-[#561C24] mt-1"
+            >
+                <h2
+                    class="text-4xl md:text-7xl lg:text-8xl font-semibold text-[#E8D8C4] leading-tight lg:leading-normal"
+                    >We <br />
+                    colour <br />
+                    your dreams</h2
+                >
+            </section>
+            <!--title3 section7 end-->
+
+            <!--image5 section8 start-->
+            <section
+                class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-[#E8D8C4] sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3"
+            >
+                <div class="flex flex-col justify-center text-left p-10">
+                    <h2
+                        class="split-6 text-[#561C24] text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16"
+                        >The warmth of family moments</h2
+                    >
+                </div>
+                <div class="flex justify-center items-center">
+                    <img
+                        class="lazyload rounded-lg w-full h-full lg:w-full lg:h-auto overflow-hidden object-cover object-center transition transform hover:-translate-y-3 cursor-pointer"
+                        data-src="./img/family.jpg"
+                        alt="moment with family"
+                    />
+                </div>
+            </section>
+            <!--image5 section5-end-->
+
+            <!--image6 section6-start-->
+            <section
+                class="grid lg:grid-cols-2 lg:h-screen lg:snap-start bg-[#E8D8C4] sm:shadow-md sm:rounded-lg sm:p-6 sm:m-3"
+            >
+                <div
+                    class="order-2 lg:order-1 flex justify-center items-center"
+                >
+                    <img
+                        class="lazyload rounded-lg w-full h-full lg:w-full lg:h-auto overflow-hidden object-cover object-center transition transform hover:-translate-y-3 cursor-pointer"
+                        data-src="./img/celebration moment.webp"
+                        alt="celebrating moment"
+                    />
+                </div>
+                <div
+                    class="order-1 lg:order-2 flex flex-col justify-center text-left p-10"
+                >
+                    <h2
+                        class="split-7 text-[#561C24] text-3xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-16"
+                        >The excitment of celebration</h2
+                    >
+                </div>
+            </section>
+
+            <!--video scetion start-->
+            <section
+                id="video-section"
+                class="h-auto bg-[#E8D8C4] mt-1 lg:snap-start"
+            >
+                <!--two video py-8 px-4-->
+                <div
+                    class="mx-auto max-w-screen-2xl pt-4 pb-2 md:py-4 md:px-6 lg:px-10 grid md:grid-cols-2 gap-2 lg:gap-0"
+                >
+                    <!--video-1-->
+                    <div>
+                        <iframe
+                            class="mx-auto w-full max-w-[374px] h-[206px] lg:max-w-[694px] lg:h-[392px] shadow-xl"
+                            src="https://www.youtube.com/embed/LXb3EKWsInQ"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <!--video-2-->
+                    <div>
+                        <iframe
+                            class="mx-auto w-full max-w-[374px] h-[206px] lg:max-w-[694px] lg:h-[392px] shadow-xl"
+                            src="https://www.youtube.com/embed/LXb3EKWsInQ"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+
+                <!--two video-->
+                <div
+                    class="mx-auto max-w-screen-2xl pt-2 pb-4 md:py-4 md:px-6 lg:px-10 grid md:grid-cols-2 gap-2 lg:gap-0"
+                >
+                    <!--video-3-->
+                    <div>
+                        <iframe
+                            class="mx-auto w-full max-w-[374px] h-[206px] lg:max-w-[694px] lg:h-[392px] shadow-xl"
+                            src="https://www.youtube.com/embed/LXb3EKWsInQ"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <!--video-4-->
+                    <div>
+                        <iframe
+                            class="mx-auto w-full max-w-[374px] h-[206px] lg:max-w-[694px] lg:h-[392px] shadow-xl"
+                            src="https://www.youtube.com/embed/LXb3EKWsInQ"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+            <!--video scetion end-->
+
+            <!--form section start-->
+            <section
+                class="min-h-screen flex items-center justify-center relative lg:snap-start"
+            >
+                <!--image last section-->
+
+                <img
+                    class="lazyload hidden lg:block lg:w-full lg:h-full absolute inset-0 object-cover z-0"
+                    data-src="./img/last.jpg"
+                    alt="happiest moment of wedding couple"
+                />
+                <!--form section start-->
+                <div
+                    class="flex items-center justify-center h-full relative z-10"
+                >
+                    <form
+                        id="wedding-form"
+                        class="bg-white bg-opacity-50 p-6 rounded h-auto w-full max-w-md"
+                    >
+                        <div class="mb-4">
+                            <label
+                                class="block text-gray-700 text-sm font-bold mb-2"
+                                for="name"
+                                >Name (required)</label
+                            >
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <label
+                                class="block text-gray-700 text-sm font-bold mb-2"
+                                for="email"
+                                >Email (required)</label
+                            >
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <label
+                                class="block text-gray-700 text-sm font-bold mb-2"
+                                for="phone"
+                                >Phone (required)</label
+                            >
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                required
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <label
+                                class="block text-gray-700 text-sm font-bold mb-2"
+                                for="guest-count"
+                                >Estimated Guest Count (required)</label
+                            >
+                            <input
+                                type="number"
+                                id="guest-count"
+                                name="guest-count"
+                                required
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <label
+                                class="block text-gray-700 text-sm font-bold mb-2"
+                                for="details"
+                                >Tell us more about your wedding - event flow,
+                                venues. (required)</label
+                            >
+                            <textarea
+                                id="details"
+                                name="details"
+                                required
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            ></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <label
+                                class="block text-gray-700 text-sm font-bold mb-2"
+                                for="location"
+                                >Location of the wedding (required)</label
+                            >
+                            <input
+                                type="text"
+                                id="location"
+                                name="location"
+                                required
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <label
+                                class="block text-gray-700 text-sm font-bold mb-2"
+                                for="dates"
+                                >Event Dates (required)</label
+                            >
+                            <input
+                                type="date"
+                                id="dates"
+                                name="dates"
+                                required
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            />
+                        </div>
+                        <div class="mb-4">
+                            <label
+                                class="block text-gray-700 text-sm font-bold mb-2"
+                                >What services are you looking for?</label
+                            >
+                            <div>
+                                <label class="block text-gray-700">
+                                    <input
+                                        type="checkbox"
+                                        name="services"
+                                        value="Photography"
+                                        class="mr-2"
+                                    />
+                                    Photography
+                                </label>
+                                <label class="block text-gray-700">
+                                    <input
+                                        type="checkbox"
+                                        name="services"
+                                        value="Films"
+                                        class="mr-2"
+                                    />
+                                    Films
+                                </label>
+                                <label class="block text-gray-700">
+                                    <input
+                                        type="checkbox"
+                                        name="services"
+                                        value="Both"
+                                        class="mr-2"
+                                    />
+                                    Both Photography and Films
+                                </label>
+                            </div>
+                        </div>
+                        <button
+                            type="submit"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            >Submit</button
+                        >
+                    </form>
+                </div>
+            </section>
+
+            <!--footer section-start-->
+            <footer
+                class="footer bg-[#561C24] text-[#E8D8C4] p-10 lg:snap-start"
+            >
+                <!--logo,company name-->
+                <aside>
+                    <a href="/client/public/index.html">
+                        <img
+                            src="/client/public/img/logo/coh-white-logo.png"
+                            class="h-6 md:h-10 lg:h-14"
+                            alt="footer-logo of colors of hapinness"
+                        />
+                    </a>
+                    <p>
+                        Colors Of Happiness
+                        <br />
+                        Powered by Robistaan TechLab Pvt Ltd
+                    </p>
+                </aside>
+                <!--social media-start-->
+                <nav>
+                    <h6 class="footer-title">Social</h6>
+                    <div class="grid grid-flow-col gap-4">
+                        <!--instagram logo and link start-->
+                        <a
+                            href="https://www.instagram.com/colorsofhappiness_coh/?igsh=MXZndjc0dTg2YzUwYQ%3D%3D"
+                            target="_blank"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                class="fill-current text-slate-400 hover:cursor-pointer hover:text-white"
+                            >
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.054 2.007.24 2.463.403a4.95 4.95 0 011.693 1.093 4.95 4.95 0 011.093 1.692c.163.456.349 1.257.403 2.464.058 1.267.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.207-.24 2.008-.403 2.464a4.95 4.95 0 01-1.093 1.693 4.95 4.95 0 01-1.692 1.093c-.456.163-1.257.349-2.464.403-1.267.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.207-.054-2.008-.24-2.464-.403a4.95 4.95 0 01-1.693-1.093 4.95 4.95 0 01-1.093-1.692c-.163-.456-.349-1.257-.403-2.464C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.054-1.207.24-2.008.403-2.464A4.95 4.95 0 013.73 3.463a4.95 4.95 0 011.692-1.093c.456-.163 1.257-.349 2.464-.403 1.267-.058 1.646-.07 4.85-.07m0-2.163C8.755 0 8.345 0 7.092.07 5.848.139 4.725.342 3.825.672A6.921 6.921 0 001.3 1.815 6.921 6.921 0 00.673 3.825c-.33.9-.534 2.024-.602 3.268C0 8.345 0 8.755 0 12s0 3.655.07 4.908c.068 1.244.272 2.368.602 3.267.486 1.205 1.14 2.22 2.022 3.102a6.921 6.921 0 002.11 2.11c.9.486 2.022.79 3.268.858C8.345 24 8.755 24 12 24s3.655 0 4.908-.07c1.244-.068 2.368-.272 3.267-.602a6.921 6.921 0 002.11-2.022 6.921 6.921 0 002.022-2.11c.486-.9.79-2.022.858-3.268.07-1.253.07-1.662.07-4.908s0-3.655-.07-4.908c-.068-1.244-.272-2.368-.602-3.267a6.921 6.921 0 00-2.022-2.11 6.921 6.921 0 00-2.11-2.022c-.9-.486-2.022-.79-3.268-.858C15.655 0 15.245 0 12 0z"
+                                ></path>
+                                <path
+                                    d="M12 5.838a6.162 6.162 0 000 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.998 3.998 0 110-7.996 3.998 3.998 0 010 7.996zM18.406 4.594a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <!--instagram logo and link end-->
+                        <!--youtube logo and link start-->
+                        <a
+                            href="https://www.youtube.com/@colorsofhappiness_coh"
+                            target="_blank"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                class="fill-current text-slate-400 hover:cursor-pointer hover:text-white"
+                            >
+                                <path
+                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <!--youtube logo and link end-->
+                        <!--fb logo and link start-->
+                        <a
+                            href="https://www.facebook.com/share/15BUBsv3BG/"
+                            target="_blank"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                class="fill-current text-slate-400 hover:cursor-pointer hover:text-white"
+                            >
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <!--fb logo and link end-->
+                    </div>
+                </nav>
+                <!--social media-end-->
+                <!--contact-start-->
+                <aside>
+                    <div class="flex">
+                        <p
+                            ><a href="tel:+919745713419" class="block"
+                                >+91 9745713419
+                            </a>
+                            <br />
+                            <a
+                                href="mailto:Hello@colorsofhappiness.com"
+                                target="_blank"
+                                class="block"
+                                >Hello@colorsofhappiness.com</a
+                            >
+                        </p>
+                    </div>
+                </aside>
+                <!--contact-end-->
+            </footer>
+            <!--footer-end-->
+        </main>
+
+        <!--lazyload-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+            async
+        ></script>
+
+        <!--Gsap-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/split-type"></script>
+
+        <!--js link-->
+        <script type="module" src="../src/index.js"></script>
+    </body>
+</html>

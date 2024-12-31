@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wedding Photography</title>
+
+        <!--tailwind css-->
+        <link rel="stylesheet" href="/client/src/style/style.css" />
+        <!-- <link rel="stylesheet" href="./style.css"> -->
+        <!--font css-->
+        <link rel="stylesheet" href="/client/public/font.css" />
+        <!-- <link rel="stylesheet" href="./font.css"> -->
+    </head>
+
+    <body
+        class="bg-white min-h-screen !scroll-smooth scrollbar-thumb-gray-600 scrollbar-track-gray-300"
+    >
+        <!--header start-->
+        <header class="bg-white h-auto">
+            <!--nav start-->
+            <nav id="navbar" class="border-gray-300 w-full top-0 z-50">
+                <div class="flex items-center justify-between p-4">
+                    <!--left portion space-x-3 rtl:space-x-reverse-->
+                    <a href="/client/public/index.html" class="flex items-center">
+                        <!--logo-->
+                        <img
+                            src="/client/public/img/logo/COH (3).png"
+                            class="h-6 md:h-10 lg:h-14"
+                            alt="Logo of colours of happiness"
+                        />
+                    </a>
+                    <!--Brandname - center-->
+                    <!-- <div class="flex-grow"></div>
+           <h1 class="text-2xl font-bold  text-[#561C24]"> Colors Of Happiness </h1> 
+ <div class="flex-grow"></div> -->
+
+                    <!-- Nav Button -->
+                    <button
+                        id="nav-button"
+                        type="button"
+                        class="z-50 inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-red-900 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 ml-auto"
+                    >
+                        <span class="sr-only">Open main menu</span>
+                        <svg
+                            class="w-5 h-5"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 17 14"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15"
+                            />
+                        </svg>
+                    </button>
+
+                    <!-- List Menu -->
+
+                    <div
+                        id="navbar-hamburger"
+                        class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 hidden z-40"
+                    >
+                        <ul
+                            class="flex h-auto text-3xl font-normal font-playfair text-center flex-col lg:text-4xl md:text-4xl"
+                        >
+                            <li
+                                class="flex flex-col mt-5 py-3 sm:items-center text-white custom-nav-li animate-animate"
+                            >
+                                <a
+                                    href="#"
+                                    class="block py-0 hover:text-red-900"
+                                    >Home</a
+                                >
+                            </li>
+                            <li
+                                class="flex flex-col mt-5 py-3 items-center text-white custom-nav-li animate-animate delay-150"
+                            >
+                                <a href="#" class="block hover:text-red-900"
+                                    >About</a
+                                >
+                            </li>
+                            <li
+                                class="flex flex-col mt-5 py-3 items-center text-white custom-nav-li animate-animate delay-300"
+                            >
+                                <a href="#" class="block hover:text-red-900"
+                                    >Projects</a
+                                >
+                            </li>
+                            <li
+                                class="flex flex-col mt-5 py-3 items-center text-white custom-nav-li animate-animate delay-450"
+                            >
+                                <a href="#" class="block hover:text-red-900"
+                                    >Services</a
+                                >
+                            </li>
+                            <li
+                                class="flex flex-col mt-5 py-3 items-center text-white custom-nav-li animate-animate delay-600"
+                            >
+                                <a href="#" class="block hover:text-red-900"
+                                    >Contact us</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--nav end-->
+        </header>
+        <!--header end-->
+
+        <!--main start-->
+        <main class="sm:mb-10 lg:mb-28">
+            <!--Wedding Head section start-->
+            <section class="lg:h-72 flex justify-center items-center">
+                <div class="text-center">
+                    <h1
+                        class="md:text-2xl text-[#561C24] font-playfair italic font-semibold"
+                    >
+                        <span
+                            class="font-Dancing font-bold text-3xl md:text-5xl lg:text-7xl"
+                            >W</span
+                        >edding
+                        <span
+                            class="font-Dancing font-bold text-3xl md:text-5xl lg:text-7xl"
+                            >P</span
+                        >hotography
+                        <span
+                            class="font-Dancing font-bold text-3xl md:text-5xl lg:text-7xl"
+                            >G</span
+                        >allery
+                    </h1>
+
+                    <p class="md:text-xl text-gray-600 font-light mt-4"
+                        >Capturing the Moments of Joy and Love</p
+                    >
+                </div>
+            </section>
+            <!--Wedding Head section end-->
+
+            <!--Gallery section start-->
+            <section class="container mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-1">
+                    <!--first img-->
+                    <div class="relative z-20">
+                        <a href="./wedding-photo-gallery.html">
+                            <img
+                                class="w-full object-cover lazyload cursor-pointer"
+                                src="/client/public/img/birthday-moment.jpg"
+                                alt="Wedding image 1"
+                            />
+                            <!--img-title-name-->
+                            <div
+                                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-10 text-white p-2 text-5xl font-semibold font-playfair"
+                                >Sree & Prabhul</div
+                            >
+                        </a>
+                    </div>
+
+                    <!--second img-->
+                    <div class="relative">
+                        <a href="">
+                            <!--need to connect next personal wedding page-->
+                            <img
+                                class="w-full object-cover lazyload"
+                                src="/client/public/img/celebration moment.webp"
+                                alt="Wedding image 2"
+                            />
+                            <!--img-title-name-->
+                            <div
+                                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-10 text-white p-2 text-5xl font-semibold font-playfair"
+                                >Sree & Prabhul</div
+                            >
+                        </a>
+                    </div>
+
+                    <!--third img-->
+                    <div class="relative">
+                        <a href="">
+                            <!--need to connect next personal wedding page-->
+                            <img
+                                class="w-full object-cover lazyload"
+                                src="/client/public/img/family.jpg"
+                                alt="Wedding image 3"
+                            />
+                            <!--img-title-name-->
+                            <div
+                                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-10 text-white p-2 text-5xl font-semibold font-playfair"
+                                >Sree & Prabhul</div
+                            >
+                        </a>
+                    </div>
+
+                    <!--forth img-->
+                    <div class="relative">
+                        <a href="">
+                            <!--need to connect next personal wedding page-->
+                            <img
+                                class="w-full object-cover lazyload"
+                                src="/client/public/img/first-bay.jpg"
+                                alt="Wedding image 4"
+                            />
+                            <!--img-title-name-->
+                            <div
+                                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-10 text-white p-2 text-5xl font-semibold font-playfair"
+                                >Sree & Prabhul</div
+                            >
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--Gallery section end-->
+        </main>
+        <!--main end-->
+
+        <!--footer section-start-->
+        <footer class="footer bg-[#561C24] text-[#E8D8C4] p-10 lg:snap-start">
+            <!--logo,company name-->
+            <aside>
+              <a href="/client/public/index.html">
+                <img
+                    src="/client/public/img/logo/coh-white-logo.png"
+                    class="h-6 md:h-10 lg:h-14"
+                    alt="footer-logo of colors of hapinness"
+                />
+                </a>
+                <p>
+                    Colors Of Happiness
+                    <br />
+                    Powered by Robistaan TechLab Pvt Ltd
+                </p>
+            </aside>
+            <!--social media-start-->
+            <nav>
+                <h6 class="footer-title">Social</h6>
+                <div class="grid grid-flow-col gap-4">
+                    <!--instagram logo and link start-->
+                    <a
+                        href="https://www.instagram.com/colorsofhappiness_coh/?igsh=MXZndjc0dTg2YzUwYQ%3D%3D"
+                        target="_blank"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            class="fill-current text-slate-400 hover:cursor-pointer hover:text-white"
+                        >
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.054 2.007.24 2.463.403a4.95 4.95 0 011.693 1.093 4.95 4.95 0 011.093 1.692c.163.456.349 1.257.403 2.464.058 1.267.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.207-.24 2.008-.403 2.464a4.95 4.95 0 01-1.093 1.693 4.95 4.95 0 01-1.692 1.093c-.456.163-1.257.349-2.464.403-1.267.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.207-.054-2.008-.24-2.464-.403a4.95 4.95 0 01-1.693-1.093 4.95 4.95 0 01-1.093-1.692c-.163-.456-.349-1.257-.403-2.464C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.054-1.207.24-2.008.403-2.464A4.95 4.95 0 013.73 3.463a4.95 4.95 0 011.692-1.093c.456-.163 1.257-.349 2.464-.403 1.267-.058 1.646-.07 4.85-.07m0-2.163C8.755 0 8.345 0 7.092.07 5.848.139 4.725.342 3.825.672A6.921 6.921 0 001.3 1.815 6.921 6.921 0 00.673 3.825c-.33.9-.534 2.024-.602 3.268C0 8.345 0 8.755 0 12s0 3.655.07 4.908c.068 1.244.272 2.368.602 3.267.486 1.205 1.14 2.22 2.022 3.102a6.921 6.921 0 002.11 2.11c.9.486 2.022.79 3.268.858C8.345 24 8.755 24 12 24s3.655 0 4.908-.07c1.244-.068 2.368-.272 3.267-.602a6.921 6.921 0 002.11-2.022 6.921 6.921 0 002.022-2.11c.486-.9.79-2.022.858-3.268.07-1.253.07-1.662.07-4.908s0-3.655-.07-4.908c-.068-1.244-.272-2.368-.602-3.267a6.921 6.921 0 00-2.022-2.11 6.921 6.921 0 00-2.11-2.022c-.9-.486-2.022-.79-3.268-.858C15.655 0 15.245 0 12 0z"
+                            ></path>
+                            <path
+                                d="M12 5.838a6.162 6.162 0 000 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.998 3.998 0 110-7.996 3.998 3.998 0 010 7.996zM18.406 4.594a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <!--instagram logo and link end-->
+                    <!--youtube logo and link start-->
+                    <a href="https://www.youtube.com/@colorsofhappiness_coh"
+                        target="_blank">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            class="fill-current text-slate-400 hover:cursor-pointer hover:text-white"
+                        >
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <!--youtube logo and link end-->
+                    <!--fb logo and link start-->
+                    <a href="https://www.facebook.com/share/15BUBsv3BG/"
+                        target="_blank">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            class="fill-current text-slate-400 hover:cursor-pointer hover:text-white"
+                        >
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <!--fb logo and link end-->
+                </div>
+            </nav>
+            <!--social media-end-->
+            <!--contact-start-->
+            <aside>
+                <div class="flex">
+                    <p
+                        ><a href="tel:+919745713419" class="block">+91 9745713419 </a>
+                        <br />
+                        <a href="Hello@colorsofhappiness.com" class=" block">Hello@colorsofhappiness.com</a>
+                    </p>
+                </div>
+            </aside>
+            <!--contact-end-->
+        </footer>
+        <!--footer-end-->
+
+        <!--Gsap-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+        <script src="https://unpkg.com/split-type"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+
+        <!--lazyload-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+            async
+        ></script>
+
+        <!--js link-->
+        <script type="module" src="/client/src/index.js"></script>
+        <!-- <script type="module" src="./index.js"></script> -->
+    </body>
+</html>
