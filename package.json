@@ -5,7 +5,7 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "build": "tailwindcss -i ./client/src/style/input.css -o ./client/src/style/style.css --watch",
+        
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
@@ -13,12 +13,7 @@
     "license": "ISC",
     "devDependencies": {
         "@eslint/js": "^9.11.1",
-        "autoprefixer": "^10.4.20",
-        "daisyui": "^4.12.13",
-        "eslint": "^9.11.1",
-        "globals": "^15.9.0",
-        "postcss": "^8.4.47",
-        "tailwindcss": "^3.4.14"
+        "globals": "^15.9.0"
     },
     "dependencies": {
         "acorn": "^8.12.1",
