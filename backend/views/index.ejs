@@ -6,22 +6,170 @@
         <link href="/style/output.css" rel="stylesheet" />
         <title>Backend</title>
     </head>
-    <body>
+    <body class="h-full">
         <!--carousel section start-->
-        <section class="h-auto bg-red-50 p-12 ">
-            <p class="text-left text-neutral-700 text-3xl font-bold"
+        <section
+            class="h-[150%] bg-gradient-to-r from-blue-400 to-purple-600 p-12"
+        >
+            <p class="text-left text-sky-50 text-3xl font-bold"
                 >Colors Of Happiness</p
             >
-            <p class="text-center text-neutral-700 text-3xl font-bold">Carousel</p>
+            <p class="text-center text-sky-50 text-3xl font-bold m-3"
+                >Carousel</p
+            >
 
-            <div class=" flex justify-center">
-            <!-- form with img-->
-            <div class="grid grid-cols-2 gap-20 p-10  ">
+            <div class="flex justify-center">
+                <!-- form with img-->
+                <div class="grid grid-cols-2 gap-20 p-10">
+                    <!--img 1 start-->
+                    <div
+                        class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-300 hover:shadow-xl transition-shadow duration-300"
+                    >
+                        <p class="font-semibold p-2">Image-1</p>
+                        <div
+                            class="w-52 h-52 bg-slate-500 flex items-center justify-center"
+                            ><img
+                                src="image-url"
+                                alt="carousel-wedding-image1"
+                                class="object-cover w-full h-full"
+                        /></div>
+                        <form
+                            action="/upload"
+                            method="POST"
+                            enctype="multipart/form-data"
+                            class="text-center"
+                        >
+                            <input
+                                type="file"
+                                name="image"
+                                accept="image/*"
+                                class="w-full p-1"
+                            />
+                            <button
+                                type="submit"
+                                class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
+                                >Upload
+                            </button>
+                        </form>
+                    </div>
+                    <!--img 1 end-->
+                    <!--img 2 start-->
+                    <div
+                        class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-300 hover:shadow-xl transition-shadow duration-300"
+                    >
+                        <p class="font-semibold p-2">Image-2</p>
+                        <div
+                            class="w-52 h-52 bg-slate-500 flex items-center justify-center"
+                            ><img
+                                src="img-url"
+                                alt="carousel-wedding-image2"
+                                class="object-cover w-full h-full"
+                            />
+                        </div>
+                        <form
+                            action="/upload"
+                            method="POST"
+                            enctype="multipart/form-data"
+                            class="text-center"
+                        >
+                            <input
+                                type="file"
+                                name="image"
+                                accept="image/*"
+                                class="w-full p-1"
+                            />
+                            <button
+                                type="submit"
+                                class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
+                                >Upload</button
+                            >
+                        </form>
+                    </div>
+                    <!--img 2 end-->
+                    <!--img 3 start-->
+                    <div
+                        class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-300 hover:shadow-xl transition-shadow duration-300"
+                    >
+                        <p class="font-semibold p-2">Image-3</p>
+                        <div
+                            class="w-52 h-52 bg-slate-500 flex items-center justify-center"
+                            ><img
+                                src="image-url"
+                                alt="carousel-wedding-image3"
+                                class="object-cover w-full h-full"
+                            />
+                        </div>
+                        <form
+                            action="/upload"
+                            method="POST"
+                            enctype="multipart/form-data"
+                            class="text-center"
+                        >
+                            <input
+                                type="file"
+                                name="image"
+                                accept="image/*"
+                                class="w-full p-1"
+                            />
+                            <button
+                                type="submit"
+                                class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
+                                >Upload</button
+                            >
+                        </form>
+                    </div>
+                    <!--img 3 end-->
+                    <!--img 4 start-->
+                    <div
+                        class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-300 hover:shadow-xl transition-shadow duration-300"
+                    >
+                        <p class="font-semibold p-2">Image-4</p>
+                        <div
+                            class="w-52 h-52 bg-slate-500 flex items-center justify-center"
+                            ><img
+                                src="image-url"
+                                alt="carousel-wedding-image4"
+                                class="object-cover w-full h-full"
+                            />
+                        </div>
+                        <form
+                            action="/upload"
+                            method="POST"
+                            enctype="multipart/form-data"
+                            class="text-center"
+                        >
+                            <input
+                                type="file"
+                                name="image"
+                                accept="image/*"
+                                class="w-full p-1"
+                            />
+                            <button
+                                type="submit"
+                                class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
+                                >Upload</button
+                            >
+                        </form>
+                    </div>
+                    <!--img 4 end-->
+                </div>
+            </div>
+        </section>
+        <!--carousel section end-->
+
+        <!--Quetes section start-->
+        <section
+            class="h-[150%] bg-gradient-to-r from-red-400 to-purple-600 p-12"
+        >
+            <p class="text-center text-red-50 text-3xl font-bold m-3">Quotes</p>
+
+            <!-- form with img top-->
+            <div class="grid grid-cols-4 gap-10 p-10">
                 <!--img 1 start-->
                 <div
-                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-100"
+                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-100 hover:shadow-xl transition-shadow duration-300"
                 >
-                <p>image-1</p>
+                    <p class="font-semibold p-2">Top-image-1</p>
                     <div
                         class="w-52 h-52 bg-slate-500 flex items-center justify-center"
                         ><img
@@ -39,11 +187,11 @@
                             type="file"
                             name="image"
                             accept="image/*"
-                            class=" w-full p-1"
+                            class="w-full p-1"
                         />
                         <button
                             type="submit"
-                            class="mt-2 p-2 bg-blue-500 rounded-md text-white"
+                            class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
                             >Upload
                         </button>
                     </form>
@@ -51,26 +199,32 @@
                 <!--img 1 end-->
                 <!--img 2 start-->
                 <div
-                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-100"
+                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-100 hover:shadow-xl transition-shadow duration-300"
                 >
-                <p>image-2</p>
+                    <p class="font-semibold p-2">Top-image-2</p>
                     <div
                         class="w-52 h-52 bg-slate-500 flex items-center justify-center"
                         ><img
                             src="img-url"
                             alt="carousel-wedding-image2"
                             class="object-cover w-full h-full"
-                    /></div>
+                        />
+                    </div>
                     <form
                         action="/upload"
                         method="POST"
                         enctype="multipart/form-data"
                         class="text-center"
                     >
-                        <input type="file" name="image" accept="image/*" class="w-full p-1" />
+                        <input
+                            type="file"
+                            name="image"
+                            accept="image/*"
+                            class="w-full p-1"
+                        />
                         <button
                             type="submit"
-                            class="mt-2 p-2 bg-blue-500 rounded-md text-white"
+                            class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
                             >Upload</button
                         >
                     </form>
@@ -78,9 +232,9 @@
                 <!--img 2 end-->
                 <!--img 3 start-->
                 <div
-                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-100"
+                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-100 hover:shadow-xl transition-shadow duration-300"
                 >
-                <p>image-3</p>
+                    <p class="font-semibold p-2">Top-image-3</p>
                     <div
                         class="w-52 h-52 bg-slate-500 flex items-center justify-center"
                         ><img
@@ -95,10 +249,15 @@
                         enctype="multipart/form-data"
                         class="text-center"
                     >
-                        <input type="file" name="image" accept="image/*" class="w-full p-1" />
+                        <input
+                            type="file"
+                            name="image"
+                            accept="image/*"
+                            class="w-full p-1"
+                        />
                         <button
                             type="submit"
-                            class="mt-2 p-2 bg-blue-500 rounded-md text-white"
+                            class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
                             >Upload</button
                         >
                     </form>
@@ -106,9 +265,9 @@
                 <!--img 3 end-->
                 <!--img 4 start-->
                 <div
-                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-100"
+                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-100 hover:shadow-xl transition-shadow duration-300"
                 >
-                <p>image-4</p>
+                    <p class="font-semibold p-2">Top-image-4</p>
                     <div
                         class="w-52 h-52 bg-slate-500 flex items-center justify-center"
                         ><img
@@ -123,18 +282,513 @@
                         enctype="multipart/form-data"
                         class="text-center"
                     >
-                        <input type="file" name="image" accept="image/*" class="w-full p-1" />
+                        <input
+                            type="file"
+                            name="image"
+                            accept="image/*"
+                            class="w-full p-1"
+                        />
                         <button
                             type="submit"
-                            class="mt-2 p-2 bg-blue-500 rounded-md text-white"
+                            class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
                             >Upload</button
                         >
                     </form>
                 </div>
                 <!--img 4 end-->
             </div>
+            <p class="text-center text-red-50 text-3xl font-bold m-3"
+                >Quotes Words</p
+            >
+            <!--bottom img-->
+            <div class="grid grid-cols-4 gap-10 p-10">
+                <!--img 1 start-->
+                <div
+                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-100 hover:shadow-xl transition-shadow duration-300"
+                >
+                    <p class="font-semibold p-2">Bottom-image-1</p>
+                    <div
+                        class="w-52 h-52 bg-slate-500 flex items-center justify-center"
+                        ><img
+                            src="image-url"
+                            alt="carousel-wedding-image1"
+                            class="object-cover w-full h-full"
+                    /></div>
+                    <form
+                        action="/upload"
+                        method="POST"
+                        enctype="multipart/form-data"
+                        class="text-center"
+                    >
+                        <input
+                            type="file"
+                            name="image"
+                            accept="image/*"
+                            class="w-full p-1"
+                        />
+                        <button
+                            type="submit"
+                            class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
+                            >Upload
+                        </button>
+                    </form>
+                </div>
+                <!--img 1 end-->
+                <!--img 2 start-->
+                <div
+                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-100 hover:shadow-xl transition-shadow duration-300"
+                >
+                    <p class="font-semibold p-2">Bottom-image-2</p>
+                    <div
+                        class="w-52 h-52 bg-slate-500 flex items-center justify-center"
+                        ><img
+                            src="img-url"
+                            alt="carousel-wedding-image2"
+                            class="object-cover w-full h-full"
+                        />
+                    </div>
+                    <form
+                        action="/upload"
+                        method="POST"
+                        enctype="multipart/form-data"
+                        class="text-center"
+                    >
+                        <input
+                            type="file"
+                            name="image"
+                            accept="image/*"
+                            class="w-full p-1"
+                        />
+                        <button
+                            type="submit"
+                            class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
+                            >Upload</button
+                        >
+                    </form>
+                </div>
+                <!--img 2 end-->
+                <!--img 3 start-->
+                <div
+                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-100 hover:shadow-xl transition-shadow duration-300"
+                >
+                    <p class="font-semibold p-2">Bottom-image-3</p>
+                    <div
+                        class="w-52 h-52 bg-slate-500 flex items-center justify-center"
+                        ><img
+                            src="image-url"
+                            alt="carousel-wedding-image3"
+                            class="object-cover w-full h-full"
+                        />
+                    </div>
+                    <form
+                        action="/upload"
+                        method="POST"
+                        enctype="multipart/form-data"
+                        class="text-center"
+                    >
+                        <input
+                            type="file"
+                            name="image"
+                            accept="image/*"
+                            class="w-full p-1"
+                        />
+                        <button
+                            type="submit"
+                            class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
+                            >Upload</button
+                        >
+                    </form>
+                </div>
+                <!--img 3 end-->
+                <!--img 4 start-->
+                <div
+                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-80 p-12 bg-blue-100 hover:shadow-xl transition-shadow duration-300"
+                >
+                    <p class="font-semibold p-2">Bottom-image-4</p>
+                    <div
+                        class="w-52 h-52 bg-slate-500 flex items-center justify-center"
+                        ><img
+                            src="image-url"
+                            alt="carousel-wedding-image4"
+                            class="object-cover w-full h-full"
+                        />
+                    </div>
+                    <form
+                        action="/upload"
+                        method="POST"
+                        enctype="multipart/form-data"
+                        class="text-center"
+                    >
+                        <input
+                            type="file"
+                            name="image"
+                            accept="image/*"
+                            class="w-full p-1"
+                        />
+                        <button
+                            type="submit"
+                            class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
+                            >Upload</button
+                        >
+                    </form>
+                </div>
+                <!--img 4 end-->
             </div>
         </section>
-        <!--carousel section end-->
+        <!--Quates section end-->
+
+        <!--home-cover-images-section-->
+        <!--wedding-pregnancy-->
+        <section
+            class="h-screen bg-gradient-to-r from-green-400 to-violet-400 p-12"
+        >
+            <p class="text-center text-green-50 text-3xl font-bold m-3"
+                >Cover image of Wedding and Pregnancy</p
+            >
+
+            <!-- form with img-->
+            <div class="grid grid-cols-2 gap-20 p-10">
+                <!--wedding-img start-->
+                <div
+                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-full p-12 bg-green-100 hover:shadow-xl transition-shadow duration-300"
+                >
+                    <div class="grid grid-cols-2">
+                        <div><!--img with form start-->
+                        <p class="font-semibold p-2">Wedding-Cover-Image</p>
+                        <div
+                            class="w-52 h-52 bg-slate-500 flex items-center justify-center"
+                            ><img
+                                src="img-url"
+                                alt="carousel-wedding-image2"
+                                class="object-cover w-full h-full"
+                            />
+                        </div>
+                        <form
+                            action="/upload"
+                            method="POST"
+                            enctype="multipart/form-data"
+                            class="text-center"
+                        >
+                            <input
+                                type="file"
+                                name="image"
+                                accept="image/*"
+                                class="w-full p-1"
+                            />
+                            <button
+                                type="submit"
+                                class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
+                                >Upload</button
+                            >
+                        </form>
+                        </div> <!--img with form end-->
+                        <div class="flex justify-center items-center">
+                            <button type="submit" class="mt-2 p-2 bg-green-600 hover:bg-green-400 rounded-md text-white">Wedding Gallery</button> 
+                        </div>
+                    </div>
+                </div>
+               <!--wedding-img-end--> 
+
+                <!-- pregnancy-img start-->
+                <div
+                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-full p-12 bg-green-100 hover:shadow-xl transition-shadow duration-300"
+                >
+                    <div class="grid grid-cols-2">
+                        <div><!--img with form start-->
+                        <p class="font-semibold p-2">Pregnancy-Cover-Image</p>
+                        <div
+                            class="w-52 h-52 bg-slate-500 flex items-center justify-center"
+                            ><img
+                                src="img-url"
+                                alt="carousel-wedding-image2"
+                                class="object-cover w-full h-full"
+                            />
+                        </div>
+                        <form
+                            action="/upload"
+                            method="POST"
+                            enctype="multipart/form-data"
+                            class="text-center"
+                        >
+                            <input
+                                type="file"
+                                name="image"
+                                accept="image/*"
+                                class="w-full p-1"
+                            />
+                            <button
+                                type="submit"
+                                class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
+                                >Upload</button
+                            >
+                        </form>
+                        </div> <!--img with form end-->
+                        <div class="flex justify-center items-center">
+                            <button type="submit" class="mt-2 p-2 bg-green-600 hover:bg-green-400 rounded-md text-white">Pregnancy Gallery</button> 
+                        </div>
+                    </div>
+                </div>
+                <!--wedding img end-->
+            </div>
+        </section>
+        <!--baby-birthday-->
+                <section
+            class="h-screen bg-gradient-to-r from-purple-200 to-violet-400 p-12"
+        >
+            <p class="text-center text-sky-50 text-3xl font-bold m-3"
+                >Cover image of Baby and Birthday</p
+            >
+
+            <!-- form with img-->
+            <div class="grid grid-cols-2 gap-20 p-10">
+                <!--baby-img start-->
+                <div
+                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-full p-12 bg-purple-100 hover:shadow-xl transition-shadow duration-300"
+                >
+                    <div class="grid grid-cols-2">
+                        <div><!--img with form start-->
+                        <p class="font-semibold p-2">Baby-Cover-Image</p>
+                        <div
+                            class="w-52 h-52 bg-slate-500 flex items-center justify-center"
+                            ><img
+                                src="img-url"
+                                alt="carousel-wedding-image2"
+                                class="object-cover w-full h-full"
+                            />
+                        </div>
+                        <form
+                            action="/upload"
+                            method="POST"
+                            enctype="multipart/form-data"
+                            class="text-center"
+                        >
+                            <input
+                                type="file"
+                                name="image"
+                                accept="image/*"
+                                class="w-full p-1"
+                            />
+                            <button
+                                type="submit"
+                                class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
+                                >Upload</button
+                            >
+                        </form>
+                        </div> <!--img with form end-->
+                        <div class="flex justify-center items-center">
+                            <button type="submit" class="mt-2 p-2 bg-green-600 hover:bg-green-400 rounded-md text-white">Baby Gallery</button> 
+                        </div>
+                    </div>
+                </div>
+               <!--baby-img-end--> 
+
+                <!-- birthday-img start-->
+                <div
+                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-full p-12 bg-purple-100 hover:shadow-xl transition-shadow duration-300"
+                >
+                    <div class="grid grid-cols-2">
+                        <div><!--img with form start-->
+                        <p class="font-semibold p-2">Pregnancy-Cover-Image</p>
+                        <div
+                            class="w-52 h-52 bg-slate-500 flex items-center justify-center"
+                            ><img
+                                src="img-url"
+                                alt="carousel-wedding-image2"
+                                class="object-cover w-full h-full"
+                            />
+                        </div>
+                        <form
+                            action="/upload"
+                            method="POST"
+                            enctype="multipart/form-data"
+                            class="text-center"
+                        >
+                            <input
+                                type="file"
+                                name="image"
+                                accept="image/*"
+                                class="w-full p-1"
+                            />
+                            <button
+                                type="submit"
+                                class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
+                                >Upload</button
+                            >
+                        </form>
+                        </div> <!--img with form end-->
+                        <div class="flex justify-center items-center">
+                            <button type="submit" class="mt-2 p-2 bg-green-600 hover:bg-green-400 rounded-md text-white">Birthday Gallery</button> 
+                        </div>
+                    </div>
+                </div>
+                <!--birthday img end-->
+            </div>
+        </section>
+        <!--family-celebration-->
+                        <section
+            class="h-screen bg-gradient-to-r from-neutral-400 to-zinc-700 p-12"
+        >
+            <p class="text-center text-sky-50 text-3xl font-bold m-3"
+                >Cover image of Family and Celebration</p
+            >
+
+            <!-- form with img-->
+            <div class="grid grid-cols-2 gap-20 p-10">
+                <!--baby-img start-->
+                <div
+                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-full p-12 bg-neutral-300 hover:shadow-xl transition-shadow duration-300"
+                >
+                    <div class="grid grid-cols-2">
+                        <div><!--img with form start-->
+                        <p class="font-semibold p-2">Family-Cover-Image</p>
+                        <div
+                            class="w-52 h-52 bg-slate-500 flex items-center justify-center"
+                            ><img
+                                src="img-url"
+                                alt="carousel-wedding-image2"
+                                class="object-cover w-full h-full"
+                            />
+                        </div>
+                        <form
+                            action="/upload"
+                            method="POST"
+                            enctype="multipart/form-data"
+                            class="text-center"
+                        >
+                            <input
+                                type="file"
+                                name="image"
+                                accept="image/*"
+                                class="w-full p-1"
+                            />
+                            <button
+                                type="submit"
+                                class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
+                                >Upload</button
+                            >
+                        </form>
+                        </div> <!--img with form end-->
+                        <div class="flex justify-center items-center">
+                            <button type="submit" class="mt-2 p-2 bg-green-600 hover:bg-green-400 rounded-md text-white">Baby Gallery</button> 
+                        </div>
+                    </div>
+                </div>
+               <!--baby-img-end--> 
+
+                <!-- birthday-img start-->
+                <div
+                    class="flex justify-center flex-col items-center border-black border-2 rounded-md w-full p-12 bg-neutral-300 hover:shadow-xl transition-shadow duration-300"
+                >
+                    <div class="grid grid-cols-2">
+                        <div><!--img with form start-->
+                        <p class="font-semibold p-2">Celebration-Cover-Image</p>
+                        <div
+                            class="w-52 h-52 bg-slate-500 flex items-center justify-center"
+                            ><img
+                                src="img-url"
+                                alt="carousel-wedding-image2"
+                                class="object-cover w-full h-full"
+                            />
+                        </div>
+                        <form
+                            action="/upload"
+                            method="POST"
+                            enctype="multipart/form-data"
+                            class="text-center"
+                        >
+                            <input
+                                type="file"
+                                name="image"
+                                accept="image/*"
+                                class="w-full p-1"
+                            />
+                            <button
+                                type="submit"
+                                class="mt-2 p-2 bg-blue-800 hover:bg-blue-500 rounded-md text-white"
+                                >Upload</button
+                            >
+                        </form>
+                        </div> <!--img with form end-->
+                        <div class="flex justify-center items-center">
+                            <button type="submit" class="mt-2 p-2 bg-green-600 hover:bg-green-400 rounded-md text-white">Birthday Gallery</button> 
+                        </div>
+                    </div>
+                </div>
+                <!--birthday img end-->
+            </div>
+        </section>
+        <!--video section-start-->
+<section id="admin-panel" class="p-6 bg-gray-200">
+    <h2 class="text-center text-3xl font-bold m-3">Update YouTube Links</h2>
+    <form
+        action="/update-videos"
+        method="POST"
+        class="grid gap-4 max-w-lg mx-auto bg-white p-6 rounded-md shadow-md"
+    >
+        <!-- Video 1 -->
+        <div>
+            <label for="video1" class="block text-sm font-medium">Video 1 URL:</label>
+            <input
+                type="url"
+                id="video1"
+                name="video1"
+                placeholder="https://www.youtube.com/watch?v=..."
+                class="w-full p-2 border border-gray-300 rounded-md"
+                
+            />
+        </div>
+
+        <!-- Video 2 -->
+        <div>
+            <label for="video2" class="block text-sm font-medium">Video 2 URL:</label>
+            <input
+                type="url"
+                id="video2"
+                name="video2"
+                placeholder="https://www.youtube.com/watch?v=..."
+                class="w-full p-2 border border-gray-300 rounded-md"
+                
+            />
+        </div>
+
+        <!-- Video 3 -->
+        <div>
+            <label for="video3" class="block text-sm font-medium">Video 3 URL:</label>
+            <input
+                type="url"
+                id="video3"
+                name="video3"
+                placeholder="https://www.youtube.com/watch?v=..."
+                class="w-full p-2 border border-gray-300 rounded-md"
+                
+            />
+        </div>
+
+        <!-- Video 4 -->
+        <div>
+            <label for="video4" class="block text-sm font-medium">Video 4 URL:</label>
+            <input
+                type="url"
+                id="video4"
+                name="video4"
+                placeholder="https://www.youtube.com/watch?v=..."
+                class="w-full p-2 border border-gray-300 rounded-md"
+                
+            />
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+            <button
+                type="submit"
+                class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-500 transition"
+            >
+                Update Videos
+            </button>
+        </div>
+    </form>
+</section>
+
+        <!--video section-end-->
     </body>
 </html>
